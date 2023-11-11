@@ -19,6 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+// Route for adding new course
 Route::post("storeCourse",[AdminController::class,"addCourse"]);
+// Rout for testing the result of task 2
 Route::get("getCourse70",[AdminController::class,"getCourse70"]);
