@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UniversitySeeder::class,
             CourseSeeder::class,
-            StageSeeder::class,
+            // StageSeeder::class,
         ]);
     }
 }
