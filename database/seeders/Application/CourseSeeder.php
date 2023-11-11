@@ -18,12 +18,11 @@ class CourseSeeder extends Seeder
     public function run(): void
     {
         Course::factory()
-            // This tells the factory to create a relationship
-            // ->has(College::factory())
-            // ->has(Stage::factory())
-            // ->has(Student::factory())
-            // ->has(Teacher::factory())
-            ->count(100)
+            ->has(College::factory())
+            ->has(Stage::factory())
+            ->has(Student::factory())
+            ->has(Teacher::factory())
+            ->count(10)
             ->create();
     }
 }

@@ -16,7 +16,6 @@ class StageSeeder extends Seeder
     public function run(): void
     {
         Stage::factory()
-            // This tells the factory to create a relationship
             ->has(College::factory())
             ->has(Material::factory())
             ->count(10)

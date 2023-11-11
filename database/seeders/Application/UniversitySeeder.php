@@ -15,7 +15,6 @@ class UniversitySeeder extends Seeder
     public function run(): void
     {
         University::factory()
-            // This tells the factory to create a relationship
             ->has(Center::factory())
             ->count(10)
             ->create();

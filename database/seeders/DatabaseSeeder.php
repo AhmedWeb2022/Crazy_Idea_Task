@@ -32,18 +32,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            // UniversitySeeder::class,
+            UniversitySeeder::class,
             CourseSeeder::class,
-            // StageSeeder::class,
+            StageSeeder::class,
         ]);
-        // Course::factory(10)->create();
-
-        // Center::factory(10)->has(Student::factory(2))->has(Teacher::factory(2))->create();
-        // University::factory(10)->has(Student::factory(2))->has(Teacher::factory(2))->create();
-        // Stage::factory(10)->create();
-        // University::factory(10)->create();
-        // Center::factory(10)->create();
-        // Student::factory(10)->create();
-        // Teacher::factory(100)->create();
     }
 }
